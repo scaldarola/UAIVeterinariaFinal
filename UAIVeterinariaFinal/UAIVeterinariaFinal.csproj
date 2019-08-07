@@ -96,11 +96,38 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Appointment.cs" />
+    <Compile Include="Models\Doctor.cs" />
+    <Compile Include="Models\Owner.cs" />
+    <Compile Include="Models\Pet.cs" />
+    <Compile Include="Models\Room.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\Appointment\Create.cshtml" />
+    <Content Include="Views\Appointment\Index.cshtml" />
+    <Content Include="Views\Doctor\Create.cshtml" />
+    <Content Include="Views\Doctor\Details.cshtml" />
+    <Content Include="Views\Doctor\Edit.cshtml" />
+    <Content Include="Views\Doctor\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Owner\Create.cshtml" />
+    <Content Include="Views\Owner\Details.cshtml" />
+    <Content Include="Views\Owner\Edit.cshtml" />
+    <Content Include="Views\Owner\Index.cshtml" />
+    <Content Include="Views\Pet\Create.cshtml" />
+    <Content Include="Views\Pet\Details.cshtml" />
+    <Content Include="Views\Pet\Index.cshtml" />
+    <Content Include="Views\Room\Create.cshtml" />
+    <Content Include="Views\Room\Details.cshtml" />
+    <Content Include="Views\Room\Edit.cshtml" />
+    <Content Include="Views\Room\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,7 +138,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
